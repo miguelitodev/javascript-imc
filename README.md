@@ -1,3 +1,5 @@
+# Curso de JavaScript: Programando na linguagem da web
+
 ## Porque quebrar uma função?
 
 Sabemos que quebrar uma grande função complexa é uma boa prática por causa de diversos fatores, mas podemos citar como os principais deles:
@@ -12,6 +14,14 @@ Sabemos que quebrar uma grande função complexa é uma boa prática por causa d
 ```js
 // Previne o comportamento padrão dos eventos, como recarregar a página
 event.preventDefault();
+```
+
+```js
+// this é o cara que é dono do evento acionado
+// Nesse caso o dono do evento click é a tabela, logo ela que será removida
+tabela.addEventListener("click", function () {
+	this.remove();
+});
 ```
 
 ## Pontos ressaltados
@@ -36,3 +46,4 @@ event.preventDefault();
 - <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/Events">Tipos de eventos</a>
 - <a target="_blank" href="https://youtu.be/GTMEuHxh8aQ">Validação de forms customizada com HTML e JavaScript | Code/Drops #32</a>
 - <a target="_blank" href="https://medium.com/@jezmael/como-validar-os-dados-de-um-formul%C3%A1rio-com-javascript-abdc5a5fba67">Como validar os dados de um formulário com JavaScript</a>
+- <a target="_blank" href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/RegExp">RegExp</a>
